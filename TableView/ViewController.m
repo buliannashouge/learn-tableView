@@ -31,6 +31,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    self.title = @"tableView简单运用";
+    
     _nameArray = [NSMutableArray arrayWithObjects:@"李意",@"王尔",@"张伞",@"刘思",@"陈舞",@"杨留",@"赵琪",@"黄霸",@"周鸠",@"吴石",@"十一",@"十二",@"十三",@"十四",@"十五",nil];
     _imageArray = [NSMutableArray arrayWithCapacity:15];
     //构建数据
@@ -42,7 +44,7 @@
     
     self.view.backgroundColor = [UIColor colorWithRed:155/255.0 green:155/255.0 blue:155/255.0 alpha:1.0];
     
-    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, screenWidth, screenHeight) style:UITableViewStylePlain];
+    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, screenWidth, self.view.frame.size.height) style:UITableViewStylePlain];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.bounces = NO;
