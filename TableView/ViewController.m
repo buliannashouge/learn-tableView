@@ -31,7 +31,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.title = @"tableView简单运用-dev分支";
+    self.title = @"tableView简单运用-dev分支-新的节点";
     
     _nameArray = [NSMutableArray arrayWithObjects:@"李意",@"王尔",@"张伞",@"刘思",@"陈舞",@"杨留",@"赵琪",@"黄霸",@"周鸠",@"吴石",@"十一",@"十二",@"十三",@"十四",@"十五",nil];
     _imageArray = [NSMutableArray arrayWithCapacity:15];
